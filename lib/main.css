@@ -1,0 +1,199 @@
+* {
+    user-select: none
+}
+
+body {
+    font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+[v-clock] {
+    display: none;
+}
+
+.header {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #ddd;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    width: 321px;
+    height: 321px;
+    background-color: rgb(245, 245, 245);
+    margin: 0 auto;
+    position: relative;
+    border-top: 2px solid #aaa;
+    border-left: 2px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.area-row {
+    height: 16px;
+    width: 320px;
+    position: absolute;
+    border-bottom: 1px solid #ccc;
+}
+
+.area-col {
+    height: 320px;
+    width: 16px;
+    position: absolute;
+    border-right: 1px solid #ccc;
+}
+
+.area-snake-body {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+
+.area-food {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #FCAC33;
+}
+
+.mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(170, 170, 170, 0.6);
+    text-align: center;
+    z-index: 99
+}
+
+.mask .mask-info {
+    margin-top: 8%;
+}
+
+.mask-info p {
+    color: red;
+    font-size: 16px;
+}
+
+.mask .mask-info .mask-info-over {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.mask .mask-info .mask-info-btn {
+    font-size: 16px;
+    white-space: nowrap;
+    padding: 8px 16px;
+    border: none;
+    color: #fff;
+    background-color: rgb(29, 153, 255);
+    cursor: pointer;
+}
+
+.game-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-info {
+    margin-bottom: 20px;
+}
+
+.game-info>span {
+    font-size: 20px;
+    color: #333;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.game-info>span>span {
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #909399;
+}
+
+.game-start {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #DCDFE6;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0 4px;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #409EFF;
+    border-color: #409EFF;
+}
+
+.game-pause {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #DCDFE6;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0 4px;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #67C23A;
+    border-color: #67C23A;
+}
+
+.game-reload {
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    border: 1px solid #DCDFE6;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0 4px;
+    transition: .1s;
+    font-weight: 500;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #E6A23C;
+    border-color: #E6A23C;
+}
